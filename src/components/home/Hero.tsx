@@ -65,7 +65,7 @@ export default function Hero() {
                         </span>
 
                         <motion.h1
-                            transition={{ delay: 0.3 }}
+                            transition={{ delay: 0.2 }}
                             variants={itemVariants}
                             className="text-4xl leading-[1.2] md:text-6xl font-bold"
                         >
@@ -127,8 +127,8 @@ export default function Hero() {
 
                     {/* Right column - Image and stats */}
                     <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="relative md:mt-16"
                     >
