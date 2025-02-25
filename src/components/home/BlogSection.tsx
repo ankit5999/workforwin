@@ -109,7 +109,7 @@ const BlogSection = () => {
 
                                 {/* Read More Link */}
                                 <Link
-                                    href={`/blog/${post.id}`}
+                                    href={`/diary/${post.id}`}
                                     className="inline-flex items-center text-appPurple-900 hover:text-appPurple-700 font-medium"
                                 >
                                     Read More
