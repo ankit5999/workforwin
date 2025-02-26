@@ -21,8 +21,11 @@ export default function Hero() {
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: -20 },
-        visible: { opacity: 1, y: 0 }
+        // hidden: { opacity: 0, y: -20 },
+        // visible: { opacity: 1, y: 0 }
+        initial :{ opacity: 0, y: -20 },
+        animate:{ opacity: 1, y: 0 },
+        transition:{ duration: 0.6, delay: 0.3 }
     }; 
     
     const headerClass = {
@@ -52,9 +55,9 @@ export default function Hero() {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left column - Text content */}
                     <motion.div
-                        variants={containerVariants}
-                        initial="hidden"
-                        animate="visible"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.1 }}
                         className="space-y-8"
                     >
                         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-appOrange-900/10 text-appOrange-900 text-sm font-medium">
@@ -64,9 +67,7 @@ export default function Hero() {
                             </span>
                         </span>
 
-                        <motion.h1
-                            transition={{ delay: 0.2 }}
-                            variants={itemVariants}
+                        <h1
                             className="text-4xl leading-[1.2] md:text-6xl font-bold"
                         >
                             <span className="text-gray-100">Everything you need to</span>{" "}
@@ -76,18 +77,19 @@ export default function Hero() {
                             {/* <span className="bg-gradient-to-r from-pink-800 via-rose-700 via-green-700 to-teal-800 bg-clip-text text-transparent">ace</span>{" "} */}
                             {/* <span className="bg-gradient-to-r from-appSkyBlue-800 to-appPurple-800 bg-clip-text text-transparent">ace</span>{" "} */}
                             <span className="text-gray-100">your interviews</span>
-                        </motion.h1>
+                        </h1>
 
-                        <motion.p
-                            variants={itemVariants}
+                        <p
                             className={`lg:text-gray-900 text-gray-100 text-lg max-w-xl`}
                         >
                             Get the skills, cultural understanding and confidence to open up your world with Workforwin.
-                        </motion.p>
+                        </p>
 
                         {/* Stats section */}
                         <motion.div
-                            variants={itemVariants}
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
                             className="flex items-center space-x-4"
                         >
                             <div className="flex -space-x-2">

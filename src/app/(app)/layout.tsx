@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://ankit.workforwin.com/assets/images/social/home_banner.png", // Use an absolute URL
+        url: "https://workforwin.com/assets/images/social/home_banner.png", // Use an absolute URL
         width: 1200,
         height: 630,
         alt: "Workforwin | Let's Do The Engineering"
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
 // ✅ Export viewport separately
 export const viewport = {
-  themeColor: "#fff",
+  themeColor: "#0d1117",
 };
 
 const headerClass = {
