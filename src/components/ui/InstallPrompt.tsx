@@ -17,7 +17,8 @@ export function InstallPrompt() {
     }
   }, [isInstallable, showPrompt]);
 
-  if (!delayedShow) return null;
+  // if (!delayedShow) return null;
+  if (!isInstallable || !showPrompt) return null;
 
   return (
     <AnimatePresence>
