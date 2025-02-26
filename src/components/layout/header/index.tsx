@@ -120,7 +120,7 @@ export default function Header({ className }: HeaderProps) {
                 >
                     <nav className="flex flex-col space-y-4">
                         {SectionData.navLinks.map(({ href, label }, index) => (
-                            <Link key={index} href={href} className="hover:text-purple-500 transition-colors">
+                            <Link key={index} onClick={() => setIsMenuOpen(!isMenuOpen)} href={href} className="hover:text-purple-500 transition-colors">
                                 {label}
                             </Link>
                         ))}

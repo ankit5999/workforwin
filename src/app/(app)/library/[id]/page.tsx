@@ -312,7 +312,7 @@ export default function CourseDetailPage({ params }: CourseDetailPageProps) {
                                     <span>{course.hours} hours</span>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-4">
+                            <div className="flex flex-wrap items-center gap-4">
                                 <div className="flex items-center gap-2">
                                     <Image
                                         src={course.instructor.avatar}
@@ -326,10 +326,13 @@ export default function CourseDetailPage({ params }: CourseDetailPageProps) {
                                         <p className="text-sm text-violet-200">Course Instructor</p>
                                     </div>
                                 </div>
-                                <div className="h-8 w-px bg-violet-500" />
-                                <div>
-                                    <p className="font-medium">Last updated: March 2024</p>
-                                    <p className="text-sm text-violet-200">{course.language}</p>
+                                {/* <div className="h-8 w-px bg-violet-500" /> */}
+                                <div className="flex items-center gap-2">
+                                    <div className="h-8 w-px bg-violet-500" />
+                                    <div>
+                                        <p className="font-medium">Last updated: March 2024</p>
+                                        <p className="text-sm text-violet-200">{course.language}</p>
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>
