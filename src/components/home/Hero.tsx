@@ -55,7 +55,7 @@ export default function Hero() {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left column - Text content */}
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                         className="space-y-8"
@@ -87,7 +87,7 @@ export default function Hero() {
 
                         {/* Stats section */}
                         <motion.div
-                            initial={{ opacity: 0, y: -20 }}
+                            initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="flex items-center space-x-4"
@@ -129,8 +129,8 @@ export default function Hero() {
 
                     {/* Right column - Image and stats */}
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="relative md:mt-16"
                     >
