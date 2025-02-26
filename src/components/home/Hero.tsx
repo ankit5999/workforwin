@@ -57,7 +57,7 @@ export default function Hero() {
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.1 }}
+                        transition={{ duration: 0.6, delay: 0.3 }}
                         className="space-y-8"
                     >
                         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-appOrange-900/10 text-appOrange-900 text-sm font-medium">
@@ -89,7 +89,7 @@ export default function Hero() {
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
                             className="flex items-center space-x-4"
                         >
                             <div className="flex -space-x-2">
@@ -129,9 +129,9 @@ export default function Hero() {
 
                     {/* Right column - Image and stats */}
                     <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
                         className="relative md:mt-16"
                     >
                         <div className="relative">
